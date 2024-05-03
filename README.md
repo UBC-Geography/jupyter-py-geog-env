@@ -14,7 +14,7 @@ Start a new terminal session in your JupyterHub environment and clone this repos
 git clone https://github.com/ubc-geography/jupyter-py-geog-env
 ```
 
-4. Run the following command to bootstrap the Python environment and install it as new kernel
+Run the following command to bootstrap the Python environment and install it as new kernel
 
 ```bash
 make -C ~/jupyter-py-geog-env create_kernel
