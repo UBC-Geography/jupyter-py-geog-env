@@ -1,4 +1,4 @@
-name: jupyter-py-geog-template
+name: jupyter-py-geog-env
 channels:
   - conda-forge
 dependencies:
@@ -338,4 +338,3 @@ dependencies:
       - wcwidth==0.2.13
       - whitebox-workflows==1.2.8
       - widgetsnbextension==4.0.10
-prefix: /home/kjmalek/miniforge3/envs/geog-python

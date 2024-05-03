@@ -5,7 +5,7 @@
 #################################################################################
 
 ## Change this variable
-PROJECT_NAME=Geography Template
+PROJECT_NAME=geog_env
 
 ## Update these variables if needed
 LANG=Python
