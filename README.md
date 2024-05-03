@@ -38,5 +38,5 @@ mamba env export -p ~/jupyter-py-geog-env/env > environment.yml
 ### To Remove the Environment and Kernel
 
 ```bash
-make remove_kernel
+make -C ~/jupyter-py-geog-env remove_kernel
 ```
