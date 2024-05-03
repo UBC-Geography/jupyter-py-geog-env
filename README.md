@@ -8,28 +8,16 @@ To avoid some of the drawbacks noted above, identify the key packages needed for
 
 ## Installation
 
-1. Start a new terminal session in your JupyterHub environment and create a project directory. The directory name should not include any spaces.
+Start a new terminal session in your JupyterHub environment and clone this repository.
 
 ```bash
-$ mkdir <project_directory>
-```
-
-2. Enter your newly created project directory.
-
-```bash
-$ cd <project_directory>
-```
-
-3. Clone this repository into your project directory.
-
-```bash
-$ git clone https://github.com/ubc-geography/jupyter-py-geog-template
+git clone https://github.com/ubc-geography/jupyter-py-geog-env
 ```
 
 4. Run the following command to bootstrap the Python environment and install it as new kernel
 
 ```bash
-$ make create_kernel
+make -C ~/jupyter-py-geog-env create_kernel
 ```
 
 Once the kernel has been installed, you may need to wait another minute or two for the kernel to appear on the Jupyter launcher.
@@ -40,15 +28,15 @@ You can added even more packages to the bootstrap environment by using the follo
 
 ```bash
 # Install packages from PyPI
-$ conda run -p ~/<project-directory>/env python -m pip install <package_name>
+conda run -p ~/jupyter-py-geog-env/env python -m pip install <package_name>
 # Or install packages from conda-forge
-$ mamba install -p ~/<project_directory>/env <package_name>
+mamba install -p ~/jupyter-py-geog-env/env <package_name>
 # Recommended: Update the mamba/conda environment file
-$ mamba env export -p ~/<project_directory>/env > environment.yml
+mamba env export -p ~/jupyter-py-geog-env/env > environment.yml
 ```
 
 ### To Remove the Environment and Kernel
 
 ```bash
-$ make remove_kernel
+make remove_kernel
 ```
