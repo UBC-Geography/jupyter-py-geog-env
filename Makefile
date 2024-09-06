@@ -52,20 +52,21 @@ endif
 else
 	@echo Environment already exists
 endif
-# If ipykernel was not installed already, install it
-ifeq (,$(shell $(MAMBA) list -p $(ENV) | grep ipykernel))
-	$(MAMBA) run -p $(ENV) python -m pip install ipykernel
-endif
 
 ## Remove the project's conda environment
 remove_env:
 	$(MAMBA) env remove -p $(ENV)
 	$(MAMBA) clean -afy
 
-## Create a new Jupyter kernel with using the project environment
+## Create a new Jupyter kernel using the project environment
 create_kernel: create_env
+# If ipykernel was not installed already, install it
+ifeq (,$(shell $(MAMBA) list -p $(ENV) | grep ipykernel))
+	$(MAMBA) run -p $(ENV) python -m pip install ipykernel
+endif
 ifeq (,$(shell jupyter kernelspec list | grep $(PROJECT_SLUG)$))
-	$(MAMBA) run -p $(ENV) python -m ipykernel install --user --name "$(PROJECT_SLUG)" --display-name "Python ($(PROJECT_NAME))"
+	$(MAMBA) run -p $(ENV) python -m ipykernel install --user --name \
+		"$(PROJECT_SLUG)" --display-name "Python ($(PROJECT_NAME))"
 else
 	@echo Kernel is already installed
 endif
@@ -76,8 +77,8 @@ remove_kernel: remove_env
 
 ## Run the kernel in a local Jupyter environment
 jupyter: create_kernel
-	$(MAMBA) install -n base -c conda-forge -y --freeze-installed jupyter
-	$(MAMBA) run -n base --no-capture-output jupyter lab -y
+	$(MAMBA) create -n jupyter_$(PROJECT_SLUG) -c conda-forge -y jupyter
+	$(MAMBA) run -n jupyter_$(PROJECT_SLUG) --no-capture-output jupyter lab -y
 
 ## Modify the following as needed to run clean up tasks
 clean: remove_kernel

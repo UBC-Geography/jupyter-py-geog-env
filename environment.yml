@@ -1,221 +1,81 @@
-name: jupyter-py-geog-env
+name: geog-py
 channels:
   - conda-forge
 dependencies:
   - _libgcc_mutex=0.1
   - _openmp_mutex=4.5
-  - attrs=23.2.0
-  - aws-c-auth=0.7.20
-  - aws-c-cal=0.6.12
-  - aws-c-common=0.9.17
-  - aws-c-compression=0.2.18
-  - aws-c-event-stream=0.4.2
-  - aws-c-http=0.8.1
-  - aws-c-io=0.14.8
-  - aws-c-mqtt=0.10.4
-  - aws-c-s3=0.5.8
-  - aws-c-sdkutils=0.1.16
-  - aws-checksums=0.1.18
-  - aws-crt-cpp=0.26.8
-  - aws-sdk-cpp=1.11.267
-  - azure-core-cpp=1.11.1
-  - azure-identity-cpp=1.6.0
-  - azure-storage-blobs-cpp=12.10.0
-  - azure-storage-common-cpp=12.5.0
-  - blosc=1.21.5
-  - branca=0.7.2
-  - brotli=1.1.0
-  - brotli-bin=1.1.0
-  - brotli-python=1.1.0
+  - blosc=1.21.6
   - bzip2=1.0.8
-  - c-ares=1.28.1
-  - ca-certificates=2024.2.2
-  - cairo=1.18.0
-  - certifi=2024.2.2
-  - cfitsio=4.4.0
-  - charset-normalizer=3.3.2
-  - click=8.1.7
-  - click-plugins=1.1.1
-  - cligj=0.7.2
-  - contourpy=1.2.1
-  - cycler=0.12.1
-  - expat=2.6.2
-  - fiona=1.9.6
-  - fmt=10.2.1
-  - folium=0.16.0
-  - font-ttf-dejavu-sans-mono=2.37
-  - font-ttf-inconsolata=3.000
-  - font-ttf-source-code-pro=2.038
-  - font-ttf-ubuntu=0.83
-  - fontconfig=2.14.2
-  - fonts-conda-ecosystem=1
-  - fonts-conda-forge=1
-  - fonttools=4.51.0
-  - freetype=2.12.1
+  - c-ares=1.33.1
+  - ca-certificates=2024.8.30
   - freexl=2.0.0
-  - gdal=3.8.5
-  - geopandas=0.14.4
-  - geopandas-base=0.14.4
-  - geos=3.12.1
-  - geotiff=1.7.1
+  - gdal=3.9.2
+  - geos=3.12.2
+  - geotiff=1.7.3
   - giflib=5.2.2
-  - hdf4=4.2.15
-  - hdf5=1.14.3
-  - icu=73.2
-  - idna=3.7
-  - jinja2=3.1.4
-  - joblib=1.4.2
+  - icu=75.1
   - json-c=0.17
-  - kealib=1.5.3
   - keyutils=1.6.1
-  - kiwisolver=1.4.5
-  - krb5=1.21.2
-  - lcms2=2.16
+  - krb5=1.21.3
   - ld_impl_linux-64=2.40
   - lerc=4.0.0
-  - libabseil=20240116.2
-  - libaec=1.1.3
-  - libarchive=3.7.2
+  - libarchive=3.7.4
   - libblas=3.9.0
-  - libboost-headers=1.84.0
-  - libbrotlicommon=1.1.0
-  - libbrotlidec=1.1.0
-  - libbrotlienc=1.1.0
   - libcblas=3.9.0
-  - libcrc32c=1.1.2
-  - libcurl=8.7.1
-  - libdeflate=1.20
+  - libcurl=8.9.1
+  - libdeflate=1.21
   - libedit=3.1.20191231
   - libev=4.33
-  - libexpat=2.6.2
+  - libexpat=2.6.3
   - libffi=3.4.2
-  - libgcc-ng=13.2.0
-  - libgdal=3.8.5
-  - libgfortran-ng=13.2.0
-  - libgfortran5=13.2.0
-  - libglib=2.80.2
-  - libgomp=13.2.0
-  - libgoogle-cloud=2.23.0
-  - libgoogle-cloud-storage=2.23.0
-  - libgrpc=1.62.2
+  - libgcc=14.1.0
+  - libgcc-ng=14.1.0
+  - libgdal-core=3.9.2
+  - libgfortran=14.1.0
+  - libgfortran-ng=14.1.0
+  - libgfortran5=14.1.0
+  - libgomp=14.1.0
   - libiconv=1.17
   - libjpeg-turbo=3.0.0
   - libkml=1.3.0
   - liblapack=3.9.0
-  - libnetcdf=4.9.2
   - libnghttp2=1.58.0
   - libnsl=2.0.1
   - libopenblas=0.3.27
   - libpng=1.6.43
-  - libpq=16.3
-  - libprotobuf=4.25.3
-  - libre2-11=2023.09.01
   - librttopo=1.1.0
-  - libspatialindex=1.9.3
   - libspatialite=5.1.0
-  - libsqlite=3.45.3
+  - libsqlite=3.46.1
   - libssh2=1.11.0
-  - libstdcxx-ng=13.2.0
+  - libstdcxx=14.1.0
+  - libstdcxx-ng=14.1.0
   - libtiff=4.6.0
   - libuuid=2.38.1
   - libwebp-base=1.4.0
-  - libxcb=1.15
   - libxcrypt=4.4.36
   - libxml2=2.12.7
-  - libzip=1.10.1
-  - libzlib=1.2.13
+  - libzlib=1.3.1
   - lz4-c=1.9.4
   - lzo=2.10
-  - mapclassify=2.6.1
-  - markupsafe=2.1.5
-  - matplotlib-base=3.8.4
-  - minizip=4.0.5
-  - munkres=1.1.4
+  - minizip=4.0.7
   - ncurses=6.5
-  - networkx=3.3
-  - nspr=4.35
-  - nss=3.100
-  - numpy=1.26.4
-  - openjpeg=2.5.2
-  - openssl=3.3.0
-  - packaging=24.0
-  - pandas=2.2.2
-  - pcre2=10.43
-  - pillow=10.3.0
-  - pip=24.0
-  - pixman=0.43.2
-  - poppler=24.04.0
-  - poppler-data=0.4.12
-  - postgresql=16.3
-  - proj=9.4.0
-  - pthread-stubs=0.4
-  - pyparsing=3.1.2
-  - pyproj=3.6.1
-  - pysocks=1.7.1
+  - numpy=2.1.1
+  - openssl=3.3.2
+  - pcre2=10.44
+  - pip=24.2
+  - proj=9.4.1
   - python=3.11.9
-  - python-dateutil=2.9.0
-  - python-tzdata=2024.1
   - python_abi=3.11
-  - pytz=2024.1
-  - re2=2023.09.01
   - readline=8.2
-  - requests=2.31.0
-  - rtree=1.2.0
-  - s2n=1.4.13
-  - scikit-learn=1.4.2
-  - scipy=1.13.0
-  - setuptools=69.5.1
-  - shapely=2.0.4
-  - six=1.16.0
-  - snappy=1.2.0
-  - spdlog=1.13.0
-  - sqlite=3.45.3
-  - threadpoolctl=3.5.0
-  - tiledb=2.23.0
+  - setuptools=73.0.1
+  - snappy=1.2.1
+  - sqlite=3.46.1
   - tk=8.6.13
-  - tzcode=2024a
   - tzdata=2024a
   - uriparser=0.9.8
-  - urllib3=2.2.1
-  - wheel=0.43.0
+  - wheel=0.44.0
   - xerces-c=3.2.5
-  - xorg-kbproto=1.0.7
-  - xorg-libice=1.1.1
-  - xorg-libsm=1.2.4
-  - xorg-libx11=1.8.9
-  - xorg-libxau=1.0.11
-  - xorg-libxdmcp=1.1.3
-  - xorg-libxext=1.3.4
-  - xorg-libxrender=0.9.11
-  - xorg-renderproto=0.11.1
-  - xorg-xextproto=7.3.0
-  - xorg-xproto=7.0.31
-  - xyzservices=2024.4.0
   - xz=5.2.6
-  - zlib=1.2.13
+  - zlib=1.3.1
   - zstd=1.5.6
-  - pip:
-      - asttokens==2.4.1
-      - comm==0.2.2
-      - decorator==5.1.1
-      - executing==2.0.1
-      - ipyleaflet==0.19.0
-      - ipython==8.24.0
-      - ipywidgets==8.1.2
-      - jedi==0.19.1
-      - jupyter-leaflet==0.19.0
-      - jupyterlab-widgets==3.0.10
-      - matplotlib-inline==0.1.7
-      - parso==0.8.4
-      - pexpect==4.9.0
-      - prompt-toolkit==3.0.43
-      - ptyprocess==0.7.0
-      - pure-eval==0.2.2
-      - pygments==2.18.0
-      - stack-data==0.6.3
-      - traitlets==5.14.3
-      - traittypes==0.2.1
-      - typing-extensions==4.11.0
-      - wcwidth==0.2.13
-      - widgetsnbextension==4.0.10
-prefix: /home/kjmalek/miniforge3/envs/jupyter-py-geog-env
+prefix: /home/kjmalek/miniforge3/envs/geog-py
