@@ -43,7 +43,7 @@ ifneq (,$(wildcard $(CONDA_FILE)))
 	$(MAMBA) env update -p $(ENV) --file $(CONDA_FILE)
 # If a conda env file is not included, install a stable Python release
 else
-	$(MAMBA) install -p $(ENV) -c conda-forge -y python=3.11
+	$(MAMBA) install -p $(ENV) -c conda-forge -y python=3.12
 endif
 # If a pip requirements file is included, install packages listed from it
 ifneq (,$(wildcard $(PIP_FILE)))

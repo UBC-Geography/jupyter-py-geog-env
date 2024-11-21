@@ -6,22 +6,22 @@ been specifically developed to work in most JupyterHub deployments.
 
 Pre-Installed Packages:
 
-- Python 3.11.9
-- GDAL 3.9.2
-- PROJ 9.4.1
-- GEOS 3.12.2
-- numpy 2.1.1py
+- Python 3.12.7
+- GDAL 3.10.0
+- PROJ 9.5.0
+- GEOS 3.13.0
+- numpy 2.1.3
 - geopandas 1.0.1
 - matplotlib 3.9.2
 - ipyleaflet 0.19.2
-- pandas 2.2.2
-- pyproj 3.6.1
-- rasterio 1.3.11
-- rioxarray 0.17.0
+- pandas 2.2.3
+- pyproj 3.7.0
+- rasterio 1.4.2
+- rioxarray 0.18.1
 - scipy 1.14.1
 - shapely 2.0.6
 - topojson 1.9
-- xarray 2024.0.0
+- xarray 2024.10.0
 
 While this repo can be extraordinarily convenient for setting up a new
 geospatial Python environment, it comes with some significant drawbacks. Because
