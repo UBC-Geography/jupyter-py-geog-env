@@ -1,38 +1,36 @@
 # Overview
 
 This repository bootstraps a reproducible Jupyter kernel that includes a
-persistent Python environment with a core set of geospatial packages, and it's
-been specifically developed to work in most JupyterHub deployments.
+persistent Python environment with a core set of geospatial packages.
 
 Pre-Installed Packages:
 
-- Python 3.12.7
+- Python 3.12.8
 - GDAL 3.10.0
-- PROJ 9.5.0
+- PROJ 9.5.1
 - GEOS 3.13.0
-- numpy 2.1.3
+- numpy 2.2.1
 - geopandas 1.0.1
-- matplotlib 3.9.2
+- matplotlib 3.10.0
 - ipyleaflet 0.19.2
 - pandas 2.2.3
 - pyproj 3.7.0
-- rasterio 1.4.2
+- rasterio 1.4.3
 - rioxarray 0.18.1
 - scipy 1.14.1
 - shapely 2.0.6
 - topojson 1.9
-- xarray 2024.10.0
+- xarray 2024.11.0
 
 While this repo can be extraordinarily convenient for setting up a new
 geospatial Python environment, it comes with some significant drawbacks. Because
 the environment includes such an extensive set of dependencies, it can take
-anywhere from 2 (local machine) to 11 minutes (UBC Open Jupyter) to install.
-Additionally, the environment itself requires approximately 1.1 GB. Some
-JupyterHub deployments, like [UBC Open Jupyter](https://open.jupyter.ubc.ca),
-only provide around 10 GB of storage space per user, meaning this environment
-will take about 11% of your total storage space. Other deployments, like
-[UBC Syzygy](https://ubc.syzygy.ca), only provide 1 GB of storage, thus making
-it impossible to install this environment on that deployment.
+anywhere from 2 (local machine) to 11 minutes (UBC Open Jupyter) to install
+depending hardware and networking. Additionally, the environment itself requires
+approximately 1.1 GB. Some JupyterHub deployments, like
+[UBC Open Jupyter](https://open.jupyter.ubc.ca), only provide around 10 GB of
+storage space per user, meaning this environment will take about 11% of your
+total storage space.
 
 To avoid some of the drawbacks noted above, identify the key packages needed for
 instruction or research. Create a new conda environment using only those
